@@ -1,0 +1,54 @@
+{
+    IBClasses = (
+        {CLASS = Directory; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = ErrorLookup; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = File; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = Files; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                directoriesController = NSArrayController; 
+                filesController = NSArrayController; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {addNode = id; banNode = id; toggleScan = id; }; 
+            CLASS = MainController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                files = id; 
+                nodeAddress = NSTextField; 
+                nodeEnabled = NSButton; 
+                nodeTable = NSTableView; 
+                nodes = id; 
+                scanSpinner = NSProgressIndicator; 
+                toggleButton = NSButton; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSIPAddress; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = Node; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = Nodes; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {nodesController = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {addDirectory = id; }; 
+            CLASS = PreferencesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                directoriesTable = NSTableView; 
+                files = Files; 
+                filesTable = NSTableView; 
+                preferencesWindow = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
